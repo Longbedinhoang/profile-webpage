@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="components/contact.js" type="text/javascript" defer></script>
+    <title>LONGBE MEDIA</title>
+</head>
+<body>
+    <header-component></header-component>
+    <section class="main-content">
+        <div class="box" onclick="redirectToPage('cinematic.html')">
+            <img src="images/cinematic_box_background.jpg" alt="">
+            <h2>CINEMATIC</h2>
+        </div>
+
+        <div class="box" onclick="redirectToPage('festival.html')">
+            <img src="images/festival_box_background.jpg" alt="">
+            <h2>FESTIVAL</h2>
+        </div>
+
+        <div class="box" onclick="redirectToPage('eventRecap.html')">
+            <img src="images/eventRecap_box_background.jpg" alt="">
+            <h2>EVENT RECAP</h2>
+        </div>
+
+        <div class="box" onclick="redirectToPage('documentary.html')">
+            <img src="images/documentary_box_background.jpg" alt="">
+            <h2>DOCUMENTARY</h2>
+        </div>
+    </section>
+
+    <contact-component></contact-component>
+
+    <footer-component></footer-component>
+    <script src="main.js"></script>
+</body>
+</html>

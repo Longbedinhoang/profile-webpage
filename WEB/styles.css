@@ -1,0 +1,155 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+header ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+header ul li {
+    display: inline-block;
+    margin-left: 20px;
+    cursor: pointer; /* chuot thanh pointer sau khi di chuot vao */
+}
+
+li:hover {
+    text-decoration: underline; /* gach chan text khi di chuot vao */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-content {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* auto xuong dong cac box khi da full */
+    justify-content: center; /* can giua */
+    align-items: top; /* can giua */
+    background-color: black;
+    min-height: 100vh;
+}
+
+.box {
+    border: 1px solid #333;
+    padding: 0px;
+    margin: 30px;
+    width: 40%; /* box width */
+    height: 320px; /* box height */
+    min-width: 400px;
+    text-align: center; /* noi dung  trong box cung can giua */ 
+    display: flex;
+    flex-direction: column; /* chuyen sang layout doc */
+    justify-content: center; /* dat giua theo chieu doc */
+    position: relative; /* Đặt phần tử làm phần tử chứa đựng cho các phần tử con có vị trí tuyệt đối */
+}
+
+.box:hover img {
+    opacity: 0.8; /* thay doi opacity khi hover */
+}
+
+.box img {
+    width: 100%; /* anh chiem toan bo chieu rong box */
+    height: 100%; /* chieu cao tu scale */
+    max-height: 320px;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0.6;
+}
+
+.box h2 {
+    position: absolute; /* vi tri tuyet doi */
+    top: 50%; /* dat o giua theo chieu doc */
+    left: 50%; /* dat o giua theo chieu ngang */
+    transform: translate(-50%, -50%); /* can giua chinh xac */
+    z-index: 1; /* h2 z index cao hon anh (do sau) */
+    color: white; /*mau chu trang */
+}
+
+.contact-section {
+    background-color: black;
+    color: white;
+    align-items: center; /* align item dung trong flexbox */
+    padding: 20px;
+    display: flex;
+}
+
+.contact-header, .contact-info {
+    flex: 1; /* chia deu giua 2 phan */
+    padding: 10px;
+}
+
+.contact-header {
+    text-align: right;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.contact-info:hover{
+    text-decoration: underline; /* gach chan text khi di chuot vao */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin: 0px;
+    width: 100%;
+    box-sizing: border-box; /* chieu rong va chieu cao se bao gom ca padding va border */
+}
+
+/*nut return*/
+
+.returnsection {
+    background-color: black;
+    border: none;
+    padding: 20px;
+}
+
+#returnButton {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+#returnButton::before {
+    content: '\2190'; /* Mã Unicode cho mũi tên bên trái */
+    margin-right: 5px; 
+}
