@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style_festival.css">
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="components/contact.js" type="text/javascript" defer></script>
+    <script src="components/returnbutton.js" type="text/javascript" defer></script>
+    <title>LONGBE MEDIA</title>
+</head>
+<body>
+    <header-component></header-component>
+    <return-component></return-component>
+    <section class="main-content">
+        <div class="box" onclick="openSlideshow('neuconcert')">
+            <img src="images/festival_page/neuconcert/neuconcert_1.jpg" alt="">
+            <h2>NEU CONCERT</h2>
+        </div>
+
+        <div class="box" onclick="">
+            <img src="images/festival_page/nyf/nyf_1.jpg" alt="">
+            <h2>NEU YOUTH FESTIVAL</h2>
+        </div>
+
+        <div class="box" onclick="">
+            <img src="images/festival_page/event3/event3_1.jpg" alt="">
+            <h2>EVENT 3</h2>
+        </div>
+
+        <div class="box" onclick="">
+            <img src="images/festival_page/event4/event4_1.jpg" alt="">
+            <h2>EVENT 4</h2>
+        </div>
+    </section>
+
+    <div id="slideshow-container" class="slideshow-container">
+        <span id="popup-close" class="popup-close" onclick="closeSlideshow()">&times;</span>
+        <div id="image-container"></div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+
+    <contact-component></contact-component>
+
+    <footer-component></footer-component>
+    <script src="main.js"></script>
+    <script src="components/slideshow.js"></script>
+</body>
+</html>
